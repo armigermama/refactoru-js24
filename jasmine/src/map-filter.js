@@ -10,7 +10,7 @@ var filter = function(arr, f) {
  var output = [];
  for(var i=0; i<arr.length; i++) {
   if(f(arr[i])) {
-   output.push(i);
+   output.push(arr[i]);
   }
  }
   return output;
