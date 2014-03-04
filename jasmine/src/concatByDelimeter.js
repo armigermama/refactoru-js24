@@ -3,9 +3,17 @@
 // e.g. join(['one', 'two', 'three'], ' and ') 
 // returns: 'one and two and three'
 var join = function(arr, delimeter) {
- var output = '';
- for(var i=0; i<arr.length; i++) {
-  output += arr[i] + delimeter;
- }
- return output;
+ 
+	var output = '';
+	var endIndex = arr.length - 1;
+
+	if (endIndex >= 0) {
+
+		for(var i=0; i<endIndex; i++) {
+			output += arr[i] + delimeter;
+		}
+		output += arr[endIndex]
+	}
+
+	return output;
 };

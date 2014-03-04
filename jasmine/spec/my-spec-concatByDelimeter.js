@@ -5,11 +5,11 @@ describe("Module", function() {
 	});
 
 	it("should not concatenate when the array contains only one string", function() {
-		expect(join(['one'], ' and ').toEqual('one'));
+		expect(join(['one'], ' and ')).toEqual('one');
 	});
 
 	it("should not concatenate when the array is empty", function() {
-		expect(join([], ' and ').toEqual(''));
+		expect(join([], ' and ')).toEqual('');
 	});
 
 	it("The original array should not change (pure function)", function() {
